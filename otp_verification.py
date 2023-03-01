@@ -29,3 +29,27 @@ opt = get_otp_number(optLength)
 
 optMessage = f"Your OPT is: {opt}"
 print(optMessage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+userEmail = input("Enter your email")
+
