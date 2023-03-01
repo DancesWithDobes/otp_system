@@ -8,6 +8,13 @@ import random
 otp = ""
 
 for num in range(0,6):
-    otp += str(1)
+    otp += str(randint(0,9))
+
+
+
+
+
+
 
 print(otp)
+
