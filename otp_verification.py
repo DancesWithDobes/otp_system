@@ -26,9 +26,9 @@ def get_otp_number(length):
     return output
 
 otp = get_otp_number(optLength)
-message = opt
+message = otp
 
-optMessage = f"Your OPT is: {opt}"
+optMessage = f"Your OPT is: {otp}"
 print(optMessage)
 
 
