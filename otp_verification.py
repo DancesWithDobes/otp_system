@@ -25,31 +25,29 @@ def get_otp_number(length):
     
     return output
 
-opt = get_otp_number(optLength)
+otp = get_otp_number(optLength)
+message = opt
 
 optMessage = f"Your OPT is: {opt}"
 print(optMessage)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+x = smtplib.SMTP('smtp.gmail.com', 587)
+x.starttls()
+x.login("your gmail account", "your app password")
 
 
 
 
 userEmail = input("Enter your email")
+x.sendmail('&&&&&&&&&&&&', userEmail, message)
 
+
+userInput = input("Enter your OTP: ")
+
+
+if userInput == otp:
+    print("OTP correct. Verification successful.")
+
+else:
+    print("Incorrect, Try again")
